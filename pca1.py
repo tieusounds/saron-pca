@@ -26,7 +26,7 @@ st.markdown(
 )
 
 # File path for the dataset
-data_file_path = "/Users/Mathieu/Documents/Research Mathieu/Zinsstruktur etc Papi/Zinsstruktur/Further Data Handling/Data/New Data Cleaned/chf_hist_cleaned.csv"
+data_file_path = "chf_hist_cleaned.csv"
 
 # Load the dataset
 df = pd.read_csv(data_file_path)
