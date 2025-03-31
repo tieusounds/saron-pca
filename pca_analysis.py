@@ -1,25 +1,24 @@
 
-import streamlit as st
-from io import BytesIO
-import numpy as np
+#from io import BytesIO
+#import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from matplotlib.pyplot import ticklabel_format
+#from matplotlib.pyplot import ticklabel_format
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cbook, cm
+#from mpl_toolkits.mplot3d import Axes3D
+#from matplotlib import cbook, cm
 from matplotlib.colors import LightSource
 from matplotlib.colors import TwoSlopeNorm
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 
 
 
 #################################### STREAMLIT ######################################
 # Function: Convert Figures to Image for Streamlit
 def fig_to_image(fig, dpi=300, width=650):
-    buf = BytesIO()
+    #buf = BytesIO()
     fig.savefig(buf, format="png", bbox_inches="tight", dpi=dpi)  # Adjust DPI for sharpness
     buf.seek(0)
     return buf
