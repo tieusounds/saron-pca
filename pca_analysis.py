@@ -18,7 +18,7 @@ import plotly.graph_objects as go
 
 #################################### STREAMLIT ######################################
 # Function: Convert Figures to Image for Streamlit
-def fig_to_image(fig, dpi=1500, width=650):
+def fig_to_image(fig, dpi=300, width=650):
     buf = BytesIO()
     fig.savefig(buf, format="png", bbox_inches="tight", dpi=dpi)  # Adjust DPI for sharpness
     buf.seek(0)
