@@ -501,7 +501,8 @@ def plot_pca_3d_scatter(pca_result, dates=None):
             yaxis_title="PC2",
             zaxis_title="PC3"
         ),
-        margin=dict(l=10, r=10, b=10, t=30)
+        margin=dict(l=10, r=10, b=10, t=30),
+        paper_bgcolor="lightgrey"
     )
 
     # Display in Streamlit
