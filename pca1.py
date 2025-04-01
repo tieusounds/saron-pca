@@ -34,7 +34,7 @@ df = pd.read_csv(data_file_path)
 # Streamlit App
 st.title("SARON Swap Rate PCA Analysis")
 
-st.markdown("## In Short")
+st.markdown("### In Short")
 st.markdown("This platform is a prototype for analyizing interest rate data - starting with a focus on SARON swap rates. At this stage, the tool"
             "uses a single dataset, which cannot be shared or downloaded due to copyright restricitons. However, the borader vision is to expand the tool's"
             "functionality to allow users to upload and analyze any interst rate dataset of their choice. Alongside the platform, I'm currently working"
