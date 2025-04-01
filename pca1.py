@@ -39,9 +39,9 @@ st.markdown("""
 #### About the Project
 This platform is a prototype for analyizing interest rate data - starting with a focus on SARON swap rates. At this stage, the tool 
 uses a single dataset, which cannot be shared or downloaded due to copyright restricitons. However, the borader vision is to expand the tool's
-functionality to allow users to upload and analyze any interst rate dataset of their choice. Alongside the platform, I'm currently working"
-            "on a non-scientific paper that explors the SAROn swap market and presents insights form the analyses you see here. The paper will be amde available
-            "on this site once finalized. Future versions of this platform aim to support customizable research and automated time series anylsis. Stay tuned-Mathieu
+functionality to allow users to upload and analyze any interst rate dataset of their choice. Alongside the platform, I'm currently working
+on a non-scientific paper that explors the SAROn swap market and presents insights form the analyses you see here. The paper will be amde available
+on this site once finalized. Future versions of this platform aim to support customizable research and automated time series anylsis. Stay tuned-Mathieu
 
 #### What is Principal Component Analysis?
 
