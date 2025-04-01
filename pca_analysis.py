@@ -704,10 +704,10 @@ def perform_pca_analysis_streamlit(df, selected_features):
     st.markdown("#### 2.1 Feature Contributions")
     display_pca_loadings(pca, df_features)
 
-    st.markdown("#### 2.2 Biplot")
-    plot_biplot(pca, pca_result, df_features)
+    # st.markdown("#### 2.2 Biplot")
+    # plot_biplot(pca, pca_result, df_features)
 
-    st.markdown("#### 2.3 PCA vs. SARON Maturity")
+    st.markdown("#### 2.2 PCA vs. SARON Maturity")
     plot_pca_loadings_linechart(loadings)
 
     st.divider()
