@@ -587,6 +587,7 @@ def plot_original_time_3d_surface_interactive(dates, df_features, flip_axis=Fals
         width=1000,
         height=600,
         margin=dict(l=40, r=40, t=40, b=40),
+        paper_bgcolor="lightgrey",
         font=dict(size=11, color="black"),
         scene=dict(
             aspectratio=dict(x=1, y=2.5, z=1),
