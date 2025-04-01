@@ -35,11 +35,25 @@ df = pd.read_csv(data_file_path)
 st.title("SARON Swap Rate PCA Analysis")
 
 st.markdown("### In Short")
-st.markdown("This platform is a prototype for analyizing interest rate data - starting with a focus on SARON swap rates. At this stage, the tool"
-            "uses a single dataset, which cannot be shared or downloaded due to copyright restricitons. However, the borader vision is to expand the tool's"
-            "functionality to allow users to upload and analyze any interst rate dataset of their choice. Alongside the platform, I'm currently working"
-            "on a non-scientific paper that explors the SAROn swap market and presents insights form the analyses you see here. The paper will be amde available"
-            "on this site once finalized. Future versions of this platform aim to support customizable research and automated time series anylsis. Stay tuned-Mathieu")
+st.markdown("""
+#### About the Project
+This platform is a prototype for analyizing interest rate data - starting with a focus on SARON swap rates. At this stage, the tool 
+uses a single dataset, which cannot be shared or downloaded due to copyright restricitons. However, the borader vision is to expand the tool's
+functionality to allow users to upload and analyze any interst rate dataset of their choice. Alongside the platform, I'm currently working"
+            "on a non-scientific paper that explors the SAROn swap market and presents insights form the analyses you see here. The paper will be amde available
+            "on this site once finalized. Future versions of this platform aim to support customizable research and automated time series anylsis. Stay tuned-Mathieu
+
+#### What is Principal Component Analysis?
+
+Principal Component Analysis (PCA) is a statistical technique used to simplify complex datasets by reducing their dimensionality while retaining the most important information. It transforms the original features into a new set of variables called "principal components," which are ordered by the amount of variance they capture from the data.
+
+PCA helps in:
+- **Identifying patterns** in data by highlighting correlations between variables.
+- **Reducing dimensionality**, making it easier to visualize and analyze large datasets.
+- **Improving performance** in machine learning by eliminating noise and redundant information.
+
+In essence, PCA extracts the essential features from the data, allowing you to work with a smaller set of variables without losing critical information.
+""")
 
 st.markdown("""
 ### 📊 Visualizations in the PCA Analysis App
