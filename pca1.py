@@ -34,13 +34,51 @@ df = pd.read_csv(data_file_path)
 # Streamlit App
 st.title("SARON Swap Rate PCA Analysis")
 
+st.markdown("## In Short")
 st.markdown("This platform is a prototype for analyizing interest rate data - starting with a focus on SARON swap rates. At this stage, the tool"
             "uses a single dataset, which cannot be shared or downloaded due to copyright restricitons. However, the borader vision is to expand the tool's"
             "functionality to allow users to upload and analyze any interst rate dataset of their choice. Alongside the platform, I'm currently working"
             "on a non-scientific paper that explors the SAROn swap market and presents insights form the analyses you see here. The paper will be amde available"
             "on this site once finalized. Future versions of this platform aim to support customizable research and automated time series anylsis. Stay tuned-Mathieu")
 
-st.divider()
+st.markdown("""
+## 📊 Visualizations in the PCA Analysis App
+
+The app provides various interactive and static visualizations to help explore and understand the Principal Component Analysis (PCA) results:
+
+### 0. Data Characteristics
+- **0.1 Original Values Over Time**  
+  A visualization of the selected SARON swap returns over time.
+
+- **0.2 Scatter Plot of The Original Values In The PC Space**  
+  A scatter plot showing how the original values relate to the first two principal components.
+
+### 1. Variance
+- **1.1 Explained Variance Table**  
+  A table displaying how much variance is explained by each principal component.
+
+- **1.2 Scree Plot**  
+  The Scree Plot visualizes the explained variance of each principal component in the PCA analysis. The bars represent the individual explained variance for each component, while the step line indicates the cumulative variance. This helps determine the optimal number of principal components to retain.
+
+### 2. Variable Contributions
+- **2.1 Feature Contributions**  
+  A table showing how each original variable contributes to the principal components.
+
+- **2.2 PCA vs. SARON Maturity**  
+  A line chart visualizing the relationship between the PCA loadings and the selected SARON maturities.
+
+### 3. Time Analysis
+- **3.1 Feature Contributions Over Time**
+  - **3.1.1 PC1**  
+    A heatmap illustrating the contribution of each original feature to Principal Component 1 over time.
+  
+  - **3.1.2 PC2**  
+    A heatmap illustrating the contribution of each original feature to Principal Component 2 over time.
+  
+  - **3.1.3 PC3**  
+    A heatmap illustrating the contribution of each original feature to Principal Component 3 over time.
+""")
+
 
 # Normalize column names
 df.columns = df.columns.str.strip()          # Remove leading/trailing whitespace
