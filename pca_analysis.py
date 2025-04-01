@@ -1,5 +1,4 @@
-
-#from io import BytesIO
+from io import BytesIO
 #import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -18,7 +17,7 @@ from matplotlib.colors import TwoSlopeNorm
 #################################### STREAMLIT ######################################
 # Function: Convert Figures to Image for Streamlit
 def fig_to_image(fig, dpi=300, width=650):
-    #buf = BytesIO()
+    buf = BytesIO()
     fig.savefig(buf, format="png", bbox_inches="tight", dpi=dpi)  # Adjust DPI for sharpness
     buf.seek(0)
     return buf
