@@ -42,32 +42,32 @@ st.markdown("This platform is a prototype for analyizing interest rate data - st
             "on this site once finalized. Future versions of this platform aim to support customizable research and automated time series anylsis. Stay tuned-Mathieu")
 
 st.markdown("""
-## 📊 Visualizations in the PCA Analysis App
+### 📊 Visualizations in the PCA Analysis App
 
 The app provides various interactive and static visualizations to help explore and understand the Principal Component Analysis (PCA) results:
 
-### 0. Data Characteristics
+#### 0. Data Characteristics
 - **0.1 Original Values Over Time**  
   A visualization of the selected SARON swap returns over time.
 
 - **0.2 Scatter Plot of The Original Values In The PC Space**  
   A scatter plot showing how the original values relate to the first two principal components.
 
-### 1. Variance
+#### 1. Variance
 - **1.1 Explained Variance Table**  
   A table displaying how much variance is explained by each principal component.
 
 - **1.2 Scree Plot**  
   The Scree Plot visualizes the explained variance of each principal component in the PCA analysis. The bars represent the individual explained variance for each component, while the step line indicates the cumulative variance. This helps determine the optimal number of principal components to retain.
 
-### 2. Variable Contributions
+#### 2. Variable Contributions
 - **2.1 Feature Contributions**  
   A table showing how each original variable contributes to the principal components.
 
 - **2.2 PCA vs. SARON Maturity**  
   A line chart visualizing the relationship between the PCA loadings and the selected SARON maturities.
 
-### 3. Time Analysis
+#### 3. Time Analysis
 - **3.1 Feature Contributions Over Time**
   - **3.1.1 PC1**  
     A heatmap illustrating the contribution of each original feature to Principal Component 1 over time.
@@ -79,6 +79,7 @@ The app provides various interactive and static visualizations to help explore a
     A heatmap illustrating the contribution of each original feature to Principal Component 3 over time.
 """)
 
+st.divider()
 
 # Normalize column names
 df.columns = df.columns.str.strip()          # Remove leading/trailing whitespace
